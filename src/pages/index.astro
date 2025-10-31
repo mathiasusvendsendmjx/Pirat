@@ -1,0 +1,57 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Two-Column Grid with Header">
+  <main class="h-screen p-8 bg-black">
+    <!-- Outer grid: 2 rows (header + content), 2 columns -->
+    <div
+      class="grid grid-cols-[60%_40%] grid-rows-[auto_1fr] gap-4 max-w-6xl mx-auto h-full"
+    >
+      <!-- Column 1 (Header / Title) -->
+      <div
+        class="border border-white text-white p-4 flex items-center justify-left col-span-2"
+      >
+        Column 1 (Title)
+      </div>
+
+      <!-- LEFT side -->
+      <div class="grid grid-rows-[5fr_1fr] gap-4 h-full">
+        <div
+          class="border border-white text-white p-4 flex items-center justify-left"
+        >
+          Column 2 (P5 Game)
+        </div>
+        <div
+          class="border border-white text-white p-4 flex items-center justify-left"
+        >
+          Column 6 (Info footer)
+        </div>
+      </div>
+
+      <!-- RIGHT side -->
+      <div class="grid grid-rows-4 gap-0 h-full">
+        <div
+          class="border border-white text-white p-4 flex items-center justify-left"
+        >
+          Column 3 (Head)
+        </div>
+        <div
+          class="border border-white text-white p-4 flex items-center justify-left"
+        >
+          Column 4 (Body)
+        </div>
+        <div
+          class="border border-white text-white p-4 flex items-center justify-left"
+        >
+          Column 5 (Legs)
+        </div>
+        <div
+          class="border border-white text-white p-4 flex items-center justify-left"
+        >
+          Column 7 (Feet)
+        </div>
+      </div>
+    </div>
+  </main>
+</Layout>
